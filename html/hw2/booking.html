@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+
+    .booking {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+        width: 450px;
+        margin: auto;
+        padding: 30px;
+        border-radius: 20px;
+        background-color: rgb(245, 245, 245);
+    }
+
+    select,
+    input {
+        display: block;
+        width: 100%;
+        height: 25px;
+    }
+
+    .lastline {
+        display: flex;
+        justify-content: space-between;
+        grid-column: 1/3
+    }
+
+    .lastline input[type=number],
+    select[name=currency] {
+        width: 100px;
+    }
+    button{
+        background-color: coral;
+        border-radius: 5px;
+        padding: 7px;
+        color: white;
+    }
+</style>
+
+<body>
+    <form class="booking" action="">
+        <div>
+            <label for="from">Flying from</label>
+            <select name="from" id="from">
+                <option value="bangkok">Bangkok, Thailand</option>
+                <option value="chiangmai">Chiangmai, Thailand</option>
+                <option value="phuket">Phuket, Thailand</option>
+            </select>
+        </div>
+        <div>
+            <label for="to">To</label>
+            <select name="to" id="to">
+                <option value="bangkok">Bangkok, Thailand</option>
+                <option value="chiangmai">Chiangmai, Thailand</option>
+                <option value="phuket">Phuket, Thailand</option>
+            </select>
+        </div>
+        <div>
+            <label for="departing">Departing</label>
+            <input type="date" id="departing" value="2021-03-06" min="2021-01-01" max="2021-12-31">
+        </div>
+        <div>
+            <label for="returning">Returning</label>
+            <input type="date" id="returning" value="yyyy-mm-dd" min="2021-01-01" max="2021-12-31">
+        </div>
+        <div class="lastline">
+            <div>
+                <label for="adult">Adult</label>
+                <input type="number" id="adult" name="adult">
+            </div>
+            <div>
+                <label for="child">Child</label>
+                <input type="number" id="child" name="child">
+            </div>
+            <div>
+                <label for="infant">Infant</label>
+                <input type="number" id="infant" name="infant">
+            </div>
+            <div>
+                <label for="currency">Currency</label>
+                <select name="currency" id="currency">
+                    <option value="thb">THB</option>
+                    <option value="usd">USD</option>
+                    <option value="rmb">RMB</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <button>SEARCH</button>
+        </div>
+    </form>
+</body>
+
+</html>
