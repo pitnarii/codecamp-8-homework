@@ -23,14 +23,14 @@ input[type=text], input[type=password]{
     margin-left: 35px;
     margin-top: 20px;
 }
-a:link{
+a.forgot:link{
     text-decoration: none;
     color: blue;
 }
-a:visited{
+a.forgot:visited{
     color: blue;
 }
-hr{
+hr.top{
     width: 345px;
     margin-left: 5.5px;
     margin-top: 20px;
@@ -76,3 +76,35 @@ h4{
     margin-top: 12vh;
     font-weight: lighter;
 }
+.footer{
+    margin-top: 240px;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 4em;
+    
+}
+.languages{
+    width: 45%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    margin-left: 490px;
+    font-size: 15px;
+}
+hr.bottom{
+    width: 48%;
+    margin-left: 480px;
+    border: 1px solid rgb(219, 219, 219);
+}
+a:link{
+    text-decoration: none;
+    color: rgb(23, 70, 102);
+}
+.options{
+   display: inline-block;
+   width: 890px;
+   font-size: 15px;
+   margin-left: 490px;
+   word-spacing: 1em;
+ 
+}    
