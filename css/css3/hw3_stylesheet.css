@@ -1,42 +1,51 @@
-body{
+body {
     background-color: whitesmoke;
     font-family: helvetica;
 }
-.container{
-   width: 320px;
-   padding: 10px 48px 10px 10px;
-   background: rgb(255, 255, 255);
-   margin-left: 110vh;
-   margin-top: 14vh;
-   border-radius: 7px;
-   box-shadow: 2px 2px 10px 1px rgb(202, 202, 202);
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    padding: 10px 48px 10px 10px;
+    background: rgb(255, 255, 255);
+    margin-left: 110vh;
+    margin-top: 14vh;
+    border-radius: 7px;
+    box-shadow: 2px 2px 10px 1px rgb(202, 202, 202);
 }
-input[type=text], input[type=password]{
+
+input[type=text], input[type=password] {
     width: 100%;
     padding: 10px;
     margin: 5px;
     font-size: 18px;
 }
-.forget{
+
+.forget {
     margin: 10px;
     text-align: center;
     margin-left: 35px;
     margin-top: 20px;
 }
-a.forgot:link{
+
+a.forgot:link {
     text-decoration: none;
     color: blue;
 }
-a.forgot:visited{
+
+a.forgot:visited {
     color: blue;
 }
-hr.top{
+
+hr.top {
     width: 345px;
     margin-left: 5.5px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-button.loginbtn{
+
+button.loginbtn {
     margin-top: 10px;
     margin-left: 2px;
     border-radius: 6px;
@@ -47,7 +56,8 @@ button.loginbtn{
     font-size: 18px;
     border: none;
 }
-button.cna{
+
+button.cna {
     margin-left: 110px;
     background-color: rgb(34, 197, 34);
     border-radius: 6px;
@@ -56,13 +66,15 @@ button.cna{
     font-size: 18px;
     border: none;
 }
-h1.facebook{
+
+h1.facebook {
     margin-top: -230px;
     color: rgb(41, 123, 247);
     margin-left: 300px;
     font-size: 60px;
 }
-h1.subhead{
+
+h1.subhead {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -71,40 +83,75 @@ h1.subhead{
     margin-top: -40px;
     font-weight: lighter;
 }
-h4{
+
+h4 {
     margin-left: 112vh;
     margin-top: 12vh;
     font-weight: lighter;
 }
-.footer{
+
+.footer {
     margin-top: 240px;
     background-color: white;
     padding-top: 10px;
     padding-bottom: 4em;
-    
 }
-.languages{
-    width: 45%;
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
+
+.languages {
+    width: 55%;
+    display: inline-block;
+    word-spacing: 0.5em;
     margin-left: 490px;
     font-size: 15px;
 }
-hr.bottom{
+
+hr.bottom {
     width: 48%;
     margin-left: 480px;
     border: 1px solid rgb(219, 219, 219);
 }
-a:link{
+
+a:link {
     text-decoration: none;
     color: rgb(23, 70, 102);
 }
-.options{
-   display: inline-block;
-   width: 890px;
-   font-size: 15px;
-   margin-left: 490px;
-   word-spacing: 1em;
- 
-}    
+
+.options {
+    display: inline-block;
+    width: 890px;
+    font-size: 15px;
+    margin-left: 490px;
+    word-spacing: 1em;
+}
+
+@media screen and (max-width:1428px) {
+    .container {
+        margin-left: 900px;
+    }
+    h4 {
+        margin-left: 920px;
+    }
+}
+@media screen and (max-width:883px){
+    h1.facebook{
+        margin-top:-550px;
+        margin-left: 20px;
+        text-align: center;
+    }
+    .container{
+        margin-top: 30vh;
+        margin-left: 200px;
+    }
+    h1.subhead{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 500px;
+        margin-left: 170px;
+        text-align: center;
+    }
+    h4{
+        margin-top: 410px;
+        margin-left: 218px;
+    }
+}
