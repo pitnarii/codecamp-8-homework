@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ให้เขียนระบบ log-in</title>
+</head>
+
+<body>
+    <script>
+         function esc(event){
+            event.keycode === 27;
+        }
+        let username = prompt('who are you?');
+        let password;
+        if (username == 'Admin') {
+            let password = prompt('what is the password?');
+            if (password == 'codecamp#5'){
+                alert('welcome');
+            }
+            else if (password == '' || esc){
+                alert('cancel');
+            }
+            else {
+                alert('wrong password');
+            }
+        }
+        else if (username == '' || esc) {
+            alert('cancel');
+        }
+        else {
+            alert('I do not know you');
+        }
+    </script>
+</body>
+
+</html>
