@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-        let i = 0;
-        while (i++ < 5) alert( i );
-    </script>
-</body>
-</html>
+2.code ทั้งสองอันนี้จะแสดง alert ออกมาเหมือนกันทั้งหมดหรือไม่
+let i = 0;
+while (++i < 5) alert( i );
+//ans จะalert 1,2,3,4
+
+let i = 0;
+while (i++ < 5) alert( i );
+//ans จะ alert 1,2,3,4,5
